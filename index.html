@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Psihoterapija za bolji život u Doboju.">
+    <title>Psihoterapeut Doboj - Balkantherapy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dobrodošli na Balkantherapy</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Stručna psihološka podrška u Doboju</h2>
+            <p>Kroz razgovor i razumijevanje, pomažemo ti da pronađeš unutrašnji mir.</p>
+            <p><a href="contact.html" class="btn">Kontaktirajte nas</a></p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>O nama</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="male-therapist.jpg" alt="Muški terapeut" class="team-img">
+                    <h3>Ime Muškog Terapeuta</h3>
+                    <p>Stručnjak za emocionalno zdravlje i samopouzdanje. Posvećen pružanju podrške kroz razgovor i terapiju.</p>
+                </div>
+                <div class="team-member">
+                    <img src="female-therapist.jpg" alt="Ženski terapeut" class="team-img">
+                    <h3>Ime Ženskog Terapeuta</h3>
+                    <p>Empatičan i pažljiv terapeut koji pomaže u prevazilaženju stresa, anksioznosti i izgradnji unutrašnje snage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service">
+            <h3>Stručna psihološka podrška</h3>
+            <p>Kroz razgovor i razumijevanje, pomažemo ti da pronađeš unutrašnji mir.</p>
+        </div>
+        <div class="service">
+            <h3>Emocionalna podrška</h3>
+            <p>Pomažemo ti da razumiješ i upravljaš svojim emocijama.</p>
+        </div>
+        <div class="service">
+            <h3>Prevazilaženje stresa</h3>
+            <p>Uz našu podršku, pronađi metode za smirenje.</p>
+        </div>
+        <div class="service">
+            <h3>Samopouzdanje</h3>
+            <p>Izgradimo tvoje samopouzdanje kroz razgovor i podršku.</p>
+        </div>
+        <div class="service">
+            <h3>Anksioznost</h3>
+            <p>Nauči tehnike za kontrolu i smanjenje anksioznosti.</p>
+        </div>
+    </section>
+
+    <section class="price-list">
+        <div class="container">
+            <h2>Naše Cijene</h2>
+            <p><strong>Prvi razgovor je besplatan (30 minuta).</strong></p>
+            <div class="price-item" onclick="togglePriceDetails('price1')">
+                <h3>Stručna psihološka podrška</h3>
+                <p>50 KM / sesija</p>
+                <div id="price1" class="price-details">
+                    <p>Detalji: Terapeut će vas voditi kroz razgovor kako biste pronašli mir.</p>
+                </div>
+            </div>
+            <div class="price-item" onclick="togglePriceDetails('price2')">
+                <h3>Emocionalna podrška</h3>
+                <p>40 KM / sesija</p>
+                <div id="price2" class="price-details">
+                    <p>Detalji: Terapeut će vam pomoći da razumijete i kontrolišete emocije.</p>
+                </div>
+            </div>
+            <div class="price-item" onclick="togglePriceDetails('price3')">
+                <h3>Prevazilaženje stresa</h3>
+                <p>60 KM / sesija</p>
+                <div id="price3" class="price-details">
+                    <p>Detalji: Tehnike za upravljanje stresom i balansiranje života.</p>
+                </div>
+            </div>
+            <div class="price-item" onclick="togglePriceDetails('price4')">
+                <h3>Samopouzdanje</h3>
+                <p>45 KM / sesija</p>
+                <div id="price4" class="price-details">
+                    <p>Detalji: Podrška za izgradnju zdravog samopouzdanja i pozitivnog stava.</p>
+                </div>
+            </div>
+            <div class="price-item" onclick="togglePriceDetails('price5')">
+                <h3>Anksioznost</h3>
+                <p>55 KM / sesija</p>
+                <div id="price5" class="price-details">
+                    <p>Detalji: Naučite kako kontrolisati anksioznost uz terapeutsku pomoć.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Balkantherapy Doboj. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle price details visibility
+        function togglePriceDetails(id) {
+            const details = document.getElementById(id);
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
