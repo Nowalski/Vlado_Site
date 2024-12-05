@@ -267,58 +267,211 @@ header nav ul li a:hover {
 
 /* Services Section */
 .services {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 40px;
-    padding: 60px 20px;
+    padding: 80px 20px;
+    background: #f9f9f9;
+    text-align: center;
     animation: fadeIn 2s ease-in-out;
-    width: 90%;
+}
+
+.services .container {
+    max-width: 1200px;
     margin: 0 auto;
 }
 
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 40px; /* Reduced bottom margin to move it closer to the title */
+    margin-top: -10px;  /* Added negative top margin to move it slightly upward */
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.9; /* Improves text readability */
+}
+
+
+/* Section title and description */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Services grid */
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Service box styles */
 .service {
-    background: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-    transition: all 0.4s ease;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+.service-icon {
+    font-size: 40px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.service-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-description {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Center alignment for specific rows */
+.service-row.center {
+    justify-content: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .service {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-description {
+        font-size: 16px;
+    }
+
+    .service-title {
+        font-size: 20px;
+    }
+
+    .service-description {
+        font-size: 14px;
+    }
+}
 /* Price List Section */
 .price-list {
-    padding: 60px 20px;
-    width: 90%;
+    padding: 80px 20px;
+    width: 85%;
+    animation: fadeInUp 1.2s ease-in-out;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
+.price-list h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.price-list p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Price Items */
 .price-item {
-    background-color: #fff;
-    margin-bottom: 35px;
-    padding: 35px;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    margin-bottom: 30px;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     cursor: pointer;
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
 }
 
+.price-item h3 {
+    font-size: 1.5rem;
+    color: #2d3436;
+    margin-bottom: 15px;
+}
+
+.price-item p {
+    font-size: 1.2rem;
+    color: #636e72;
+    margin-bottom: 15px;
+}
+
+/* Hover Effect */
 .price-item:hover {
     background-color: #f9f7f4;
     transform: translateY(-8px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
 
+.price-item:hover h3 {
+    color: #0984e3;
+}
+
+.price-item:hover p {
+    color: #636e72;
+}
+
+/* Price Details */
 .price-details {
     display: none;
-    padding-top: 20px;
-    font-size: 1.15rem;
+    padding-top: 15px;
+    font-size: 1.1rem;
     color: #636e72;
-    line-height: 1.8;
+    line-height: 1.6;
+    margin-top: 10px;
 }
+
+.price-item.active .price-details {
+    display: block;
+}
+
+/* Add some spacing to make it look more refined */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 
 /* Contact Section */
 .contact {
